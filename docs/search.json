@@ -6,7 +6,7 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\nAbout Me\r\nHello, this is the short description of my self as recommended by the data science course I am taking right now, my name is Stefan.\r\nAbout the Project\r\nThe Time Hass Come | An introspective look at the avocado trends of the United States\r\nGoals\r\nAnalyse the fluctuation of sale volumes across all U.S. states\r\nLink these fluctuations to known influencers of sale volumes\r\nThese may be difficult to identify and will probably be scrapped, but what can you do?\r\n\r\nVisualize the relationship between price and sale volume fluctuations\r\n“This is data science”\r\nPreceptor\r\n\r\nKane’s Free High School Data Science Bootcamp\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-21T14:09:23-04:00"
+      "last_modified": "2021-06-21T14:46:53-04:00"
     },
     {
       "path": "index.html",
@@ -14,7 +14,35 @@
       "description": "This is where I will describe my final project.\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-21T13:46:48-04:00"
+      "last_modified": "2021-06-21T14:46:56-04:00"
+    },
+    {
+      "path": "source_a.html",
+      "title": "Source A",
+      "description": "Detailed notes for Source A\n",
+      "author": [
+        {
+          "name": "Stefan",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-21T14:46:56-04:00"
+    },
+    {
+      "path": "source_b.html",
+      "title": "Source B",
+      "description": "Detailed notes for Source B\n",
+      "author": [
+        {
+          "name": "Stefan",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-21T14:46:57-04:00"
     }
   ],
   "collections": []
