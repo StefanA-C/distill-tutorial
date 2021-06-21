@@ -8,11 +8,19 @@ site: distill::distill_website
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
-
+library(tidyverse)
+library(ggthemes)
+```
+```{r car-plot}
+mtcars %>% 
+select(mpg, wt) %>% 
+ggplot(aes(wt,mpg))+
+geom_point()+
+geom_smooth(method = "lm", formula = y~x, se = F)+
+theme_clean()+
+labs(title = "this is the title",
+subtitle = "this is the subtitle",
+x= "you guessed it",
+y = "news flash")
 ```
 
