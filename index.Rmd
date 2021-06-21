@@ -17,6 +17,7 @@ library(gt)
 ```{r car-plot}
 car_plot <- read_rds("car-plot.rds")
 car_plot
+ggsave("car-plot.png", plot = car_plot)
 ```
 ```{r table-1}
 table <- mtcars %>% 
@@ -28,5 +29,14 @@ kable(table)
 ```{r table-3, layout = "1-body-outset"}
 paged_table(table, options(cols.print =12))
 ```
-
+```{r table-4}
+gt(table, rownames_to_stub = TRUE) %>% 
+  tab_header(title = md("**1974 Automobiles**"), subtitle = "The least fuel efficient cars are the heaviest") %>% 
+  tab_source_note("Source: Henderson and Velleman (1981)") %>% 
+  tab_spanner(label = "Variable Group 1", columns = c(mpg, cyl, disp, hp, drat))
+```
+```{r}
+include_graphics("images/car-plot.png")
+```
+ 
 
