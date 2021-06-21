@@ -1,7 +1,7 @@
 name: "."
 title: "Title of My Final Project"
 description: |
-  Title of My Final Project
+  Title of My Final Project 
 output_dir: "docs"
 navbar:
   right:
