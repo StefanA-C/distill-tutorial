@@ -10,17 +10,23 @@ knitr::opts_chunk$set(echo = FALSE)
 
 library(tidyverse)
 library(ggthemes)
+library(knitr)
+library(rmarkdown)
+library(gt)
 ```
 ```{r car-plot}
-mtcars %>% 
-select(mpg, wt) %>% 
-ggplot(aes(wt,mpg))+
-geom_point()+
-geom_smooth(method = "lm", formula = y~x, se = F)+
-theme_clean()+
-labs(title = "this is the title",
-subtitle = "this is the subtitle",
-x= "you guessed it",
-y = "news flash")
+car_plot <- read_rds("car-plot.rds")
+car_plot
 ```
+```{r table-1}
+table <- mtcars %>% 
+arrange(desc(mpg))
+```
+```{r table-2}
+kable(table)
+```
+```{r table-3, layout = "1-body-outset"}
+paged_table(table, options(cols.print =12))
+```
+
 
