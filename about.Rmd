@@ -7,4 +7,20 @@ description: |
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+## About Me
+Hello, this is the short description of my self as recommended by the data science course I am taking right now, my name is **Stefan**.
 
+## About the Project
+*The Time Hass Come* 
+| An introspective look at the avocado trends of the United States
+
+### Goals
+* Analyse the fluctuation of sale volumes across all U.S. states
+* Link these fluctuations to known influencers of sale volumes
+  + These may be difficult to identify and will probably be scrapped, but what can you do?
+* Visualize the relationship between price and sale volume fluctuations
+
+"This is data science"  
+~ Preceptor
+
+[Kane's Free High School Data Science Bootcamp](https://bootcamp.davidkane.info)
